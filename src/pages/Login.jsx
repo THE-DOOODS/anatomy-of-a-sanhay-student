@@ -15,7 +15,7 @@ const Login = () => {
 							className='w-32 m-auto'
 						/>
 						<h1 className='font-extrabold text-3xl'>
-							<span className='text-primary'>Log</span>in width AOSS
+							<span className='text-primary'>Log</span>in with AOSS
 						</h1>
 						<div className='text-left'>
 							<p>Email</p>

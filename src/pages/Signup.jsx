@@ -15,7 +15,7 @@ const Signup = () => {
 							className='w-32 m-auto'
 						/>
 						<h1 className='font-extrabold text-3xl'>
-							<span className='text-primary'>Sign</span>up width AOSS
+							<span className='text-primary'>Sign</span>up with AOSS
 						</h1>
 						<div className='text-left flex flex-col gap-2'>
 							<p>First Name</p>
@@ -39,7 +39,7 @@ const Signup = () => {
 								className='w-full border-2 border-gray-300 rounded-md p-2'
 							/>
 							<button className='w-full py-2 rounded-md text-center mt-4 bg-[#bb2e2e] text-white font-semibold'>
-								Login
+								Sign up
 							</button>
 							{/* // eslint-disable-next-line react/no-unescaped-entities */}
 							<p className='mt-2 text-center'>
