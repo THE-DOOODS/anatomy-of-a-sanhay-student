@@ -77,6 +77,10 @@ export const login = async (req, res) => {
 			return res.status(400).json({ message: "User does not exist" });
 		}
 
+		if (!user.is_validated) {
+			return res.status(401).json({ message: "Verify email first." });
+		}
+
 		const isPasswordMatch = await bcrypt.compare(password, user.password);
 
 		if (!isPasswordMatch) {

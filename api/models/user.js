@@ -11,6 +11,7 @@ const userSchema = mongoose.Schema(
 		gender: { type: String, required: true },
 		profilePicture: { type: String, required: false, default: "" },
 		bio: { type: String, required: false, default: "" },
+		is_validated: { type: Boolean, default: false },
 	},
 	{ timestamps: true }
 );
