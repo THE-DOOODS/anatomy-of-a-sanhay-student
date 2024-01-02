@@ -34,7 +34,6 @@ const Login = () => {
 				cookie.set("token", data?.payload?.token, "/");
 			}
 
-			console.log(user);
 			new Promise((resolve, reject) => {
 				if (res.status >= 200 && res.status <= 205) {
 					setTimeout(() => {
