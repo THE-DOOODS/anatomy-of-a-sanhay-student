@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -25,6 +26,10 @@ function App() {
 				<Route
 					path='/signup'
 					element={<Signup />}
+				/>
+				<Route
+					path='/anatomy'
+					element={<Dashboard />}
 				/>
 			</Routes>
 		</Router>

@@ -10,7 +10,7 @@ import { Cookies } from "react-cookie";
 
 const Login = () => {
 	const navigate = useNavigate();
-	const { user, setUser } = useUserStore();
+	const { setUser } = useUserStore();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const isMobile = useMediaQuery("(max-width: 840px)");
@@ -28,9 +28,8 @@ const Login = () => {
 
 			if (res.status >= 200 && res.status <= 205) {
 				toast.success(data.message);
-				setUser({ user: data.payload });
+				setUser({ user: data?.payload });
 				const cookie = new Cookies();
-
 				cookie.set("token", data?.payload?.token, "/");
 			}
 
