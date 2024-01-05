@@ -23,7 +23,7 @@ const Dashboard = () => {
 					<Nav />
 					<div className='grid justify-center items-center h-screen px-10 w-full relative'>
 						<div className='absolute z-50'>
-							{user.user.gender === "female" ? (
+							{user.user.gender === "male" ? (
 								<button
 									onClick={() => setIsOpenBackpack(!isOpenBackpack)}
 									className='relative left-60 bottom-44'>
@@ -40,7 +40,7 @@ const Dashboard = () => {
 							)}
 						</div>
 
-						{user?.user?.gender === "female" ? (
+						{user?.user?.gender === "male" ? (
 							<img
 								className='absolute'
 								src={boy}
