@@ -41,7 +41,7 @@ const Dashboard = () => {
 								<div>
 									<button
 										onClick={() => setIsOpenBackpack(!isOpenBackpack)}
-										className='relative left-60 bottom-28 text-2xl'>
+										className='relative left-60 bottom-24 text-4xl opacity-0'>
 										Backpack
 									</button>
 								</div>
