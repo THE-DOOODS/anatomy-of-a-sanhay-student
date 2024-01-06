@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import { useUserStore } from "../store/user";
@@ -5,10 +6,10 @@ import { Cookies } from "react-cookie";
 import Nav from "../components/Nav";
 import boy from "../assets/boy.png";
 import girl from "../assets/girl.png";
-import { useActionStore } from "../store/action";
+import Backpack from "../components/Backpack";
 
 const Dashboard = () => {
-	const { isOpenBackpack, setIsOpenBackpack } = useActionStore();
+	const [isOpenBackpack, setIsOpenBackpack] = useState(false);
 	const cookie = new Cookies();
 	const token = cookie.get("token");
 	const { user } = useUserStore();
@@ -24,11 +25,18 @@ const Dashboard = () => {
 					<div className='grid justify-center items-center h-screen px-10 w-full relative'>
 						<div className='absolute z-50'>
 							{user.user.gender === "male" ? (
-								<button
-									onClick={() => setIsOpenBackpack(!isOpenBackpack)}
-									className='relative left-60 bottom-44'>
-									Backpack
-								</button>
+								<>
+									{/* Bag */}
+									<button
+										onClick={() => setIsOpenBackpack(!isOpenBackpack)}
+										className='relative left-[180px] bottom-40 text-4xl opacity-0'>
+										Backpack
+									</button>
+									{/* Waterbottle */}
+									<butto className='relative left-[180px] bottom-36 text-4xl opacity-0'>
+										Waterbottle
+									</butto>
+								</>
 							) : (
 								<div>
 									<button
@@ -58,6 +66,10 @@ const Dashboard = () => {
 			) : (
 				<div className=''></div>
 			)}
+			<Backpack
+				isOpen={isOpenBackpack}
+				setIsOpen={setIsOpenBackpack}
+			/>
 		</div>
 	);
 };

@@ -4,6 +4,8 @@ import Signup from "./pages/Signup";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
+import Calculator from "./pages/Calculator";
+import Dictionary from "./pages/Dictionary";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -30,6 +32,14 @@ function App() {
 				<Route
 					path='/anatomy'
 					element={<Dashboard />}
+				/>
+				<Route
+					path='/calculator'
+					element={<Calculator />}
+				/>
+				<Route
+					path='/dictionary'
+					element={<Dictionary />}
 				/>
 			</Routes>
 		</Router>

@@ -7,7 +7,7 @@ export default {
 				main: ["Poppins", "sans-serif"],
 			},
 			backgroundColor: {
-				primary: "##bb2e2e",
+				primary: "#bb2e2e",
 			},
 			textColor: {
 				primary: "#bb2e2e",

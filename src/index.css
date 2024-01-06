@@ -3,3 +3,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.calculator {
+	width: 320px;
+	margin: 0 auto;
+	color: #222;
+	font-family: "Lato", san-serif;
+	font-size: 1.5em;
+}
+
+.screen {
+	background-color: #222;
+	color: white;
+	width: 320px;
+	overflow: hidden;
+	padding: 15px;
+	height: 50px;
+	line-height: 20px;
+	text-align: right;
+	font-size: 2em;
+	outline: 1px solid #222;
+}
+
+.numbers {
+	width: 240px;
+}
+
+.functions {
+	width: 80px;
+}
+
+.button {
+	background-color: #ccc;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	line-height: 80px;
+	cursor: pointer;
+	outline: 1px solid #222;
+}
+
+.button:active {
+	background-color: #bbb;
+}
+
+.number,
+.function {
+	background-color: #ccc;
+}
+
+.number-0 {
+	width: 160px;
+}
+
+.operator {
+	background-color: #ffb500;
+}
