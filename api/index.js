@@ -6,6 +6,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import { limiter } from "./lib/limiter.js";
+import { comments } from "./routes/comments.js";
 import { auth } from "./routes/auth.js";
 
 dotenv.config();
@@ -27,6 +28,7 @@ app.use(morgan("tiny"));
 app.use(limiter);
 
 app.use("/api/auth", auth);
+app.use("/api", comments);
 
 new Promise((resolve, reject) => {
 	mongoose

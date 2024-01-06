@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import { useUserStore } from "../store/user";
 import { Cookies } from "react-cookie";
@@ -33,9 +33,21 @@ const Dashboard = () => {
 										Backpack
 									</button>
 									{/* Waterbottle */}
-									<butto className='relative left-[180px] bottom-36 text-4xl opacity-0'>
+									<Link
+										to='/periodic'
+										className='relative left-[180px] bottom-36 text-4xl opacity-0'>
 										Waterbottle
-									</butto>
+									</Link>
+									<Link
+										to='/apple'
+										className='relative right-[200px] bottom-36 text-4xl opacity-0'>
+										Apple
+									</Link>
+									<Link
+										to='/body'
+										className='relative right-[170px] bottom-36 text-4xl opacity-0'>
+										Body
+									</Link>
 								</>
 							) : (
 								<div>
@@ -44,6 +56,16 @@ const Dashboard = () => {
 										className='relative left-60 bottom-24 text-4xl opacity-0'>
 										Backpack
 									</button>
+									<Link
+										to='/apple'
+										className='relative bottom-44 text-5xl opacity-0'>
+										Apple
+									</Link>
+									<Link
+										to='/body'
+										className='relative bottom-36 text-5xl left-[30px] opacity-0'>
+										Body
+									</Link>
 								</div>
 							)}
 						</div>

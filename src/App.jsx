@@ -6,6 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Calculator from "./pages/Calculator";
 import Dictionary from "./pages/Dictionary";
+import Periodic from "./pages/Periodic";
+import Physics from "./pages/Physics";
+import Kinematics from "./pages/physics/Kinematics";
+import Newton from "./pages/physics/Newton";
+import Gravity from "./pages/physics/Gravity";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -40,6 +45,26 @@ function App() {
 				<Route
 					path='/dictionary'
 					element={<Dictionary />}
+				/>
+				<Route
+					path='/periodic'
+					element={<Periodic />}
+				/>
+				<Route
+					path='/apple'
+					element={<Physics />}
+				/>
+				<Route
+					path='/kinematics'
+					element={<Kinematics />}
+				/>
+				<Route
+					path='/newton'
+					element={<Newton />}
+				/>
+				<Route
+					path='/gravity'
+					element={<Gravity />}
 				/>
 			</Routes>
 		</Router>
