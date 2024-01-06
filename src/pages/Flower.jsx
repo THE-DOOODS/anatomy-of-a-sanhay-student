@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import logo from "../assets/logo.png";
 import flower from "../assets/flower.jpg";
+import PartOfAPlant from "../components/PartOfAPlant";
 
 const Flower = () => {
+	const [part, setPart] = useState("");
 	const isMobile = useMediaQuery("(max-width: 840px)");
 	return (
 		<div>
@@ -30,17 +33,46 @@ const Flower = () => {
 							alt='stummy'
 						/>
 						<div className='absolute z-50'>
-							<Link
-								to='/liver'
-								className='text-3xl font-bold relative top-[190px] left-[55px]'>
+							<button
+								onClick={() => setPart("Stamen")}
+								className='text-3xl font-bold relative top-[190px] left-[55px] opacity-0'>
 								Stamen
-							</Link>
+							</button>
+							<button
+								onClick={() => setPart("Pistil")}
+								className='text-3xl font-bold relative top-[280px] left-[90px] opacity-0'>
+								Pistil
+							</button>
+							<button
+								onClick={() => setPart("Petal")}
+								className='text-3xl font-bold relative top-[300px] right-[120px] opacity-0'>
+								Petal
+							</button>
+							<button
+								onClick={() => setPart("Ovule")}
+								className='text-3xl font-bold relative top-[330px] left-[140px] opacity-0'>
+								Ovule
+							</button>
+							<button
+								onClick={() => setPart("Sepal")}
+								className='text-3xl font-bold relative top-[380px] left-[120px] opacity-0'>
+								Sepal
+							</button>
+							<button
+								onClick={() => setPart("Pedicel")}
+								className='text-3xl font-bold relative top-[420px] right-[40px] opacity-0'>
+								Pedicel
+							</button>
 						</div>
 					</div>
 				</div>
 			) : (
 				<div className=''></div>
 			)}
+			<PartOfAPlant
+				part={part}
+				setPart={setPart}
+			/>
 		</div>
 	);
 };
