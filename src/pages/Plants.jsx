@@ -1,15 +1,14 @@
-import React from "react";
 import { useMediaQuery } from "../hooks/useMediaQuery";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import logo from "../assets/logo.png";
 
-const Periodic = () => {
+const Plants = () => {
 	const isMobile = useMediaQuery("(max-width: 840px)");
 	return (
 		<div>
 			{isMobile ? (
-				<div className='p-4'>
+				<div className='p-4 font-main'>
 					<div className='flex justify-between items-center w-full mb-10'>
 						<div className='flex gap-4 items-center'>
 							<Link to='/anatomy'>
@@ -20,14 +19,11 @@ const Periodic = () => {
 								className='w-10'
 							/>
 						</div>
-						<h1 className='text-primary text-xl font-bold'>
-							Periodic Table of Elements
-						</h1>
+						<h1 className='text-primary text-xl font-bold'>General Biology</h1>
 					</div>
-					{/* Table */}
-					{/* Rotate 180deg clockwise */}
-					<div className=''>
-						<img src='https://www.allaboutcircuits.com/uploads/articles/periodic-table-of-the-elements.jpg' />
+					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
+						<Link to='/flower'>Flower Anatomy</Link>
+						<Link>Coming Soon...</Link>
 					</div>
 				</div>
 			) : (
@@ -37,4 +33,4 @@ const Periodic = () => {
 	);
 };
 
-export default Periodic;
+export default Plants;

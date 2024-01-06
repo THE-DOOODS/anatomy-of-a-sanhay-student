@@ -38,18 +38,28 @@ const Body = () => {
 								Liver
 							</Link>
 							<Link
+								to='/spleen'
+								className='text-xl font-bold relative top-[155px] left-[150px] opacity-0'>
+								Spleen
+							</Link>
+							<Link
 								to='/stomach'
-								className='text-xl font-bold relative top-[200px] left-[90px] opacity-0'>
+								className='text-xl font-bold relative top-[200px] left-[30px] opacity-0'>
 								Stomach
 							</Link>
 							<Link
+								to='/gall'
+								className='text-md font-bold relative top-[210px] right-[140px] opacity-0'>
+								Gallbladder
+							</Link>
+							<Link
 								to='/large'
-								className='text-xl font-bold relative top-[300px] right-[50px] opacity-0'>
+								className='text-xl font-bold relative top-[285px] right-[210px] opacity-0'>
 								Large
 							</Link>
 							<Link
 								to='/small'
-								className='text-xl font-bold relative top-[300px] right-[20px] opacity-0'>
+								className='text-xl font-bold relative top-[300px] right-[200px] opacity-0'>
 								Small
 							</Link>
 						</div>

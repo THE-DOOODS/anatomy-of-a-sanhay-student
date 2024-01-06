@@ -74,6 +74,14 @@ const Dashboard = () => {
 								</div>
 							)}
 						</div>
+						<Link
+							to='/plants'
+							className='absolute bottom-[120px] z-50'>
+							<img
+								src='https://cdn-icons-png.flaticon.com/512/2972/2972108.png'
+								className='w-20'
+							/>
+						</Link>
 
 						{user?.user?.gender === "male" ? (
 							<img

@@ -12,10 +12,14 @@ import Kinematics from "./pages/physics/Kinematics";
 import Newton from "./pages/physics/Newton";
 import Gravity from "./pages/physics/Gravity";
 import Body from "./pages/Body";
+import Flower from "./pages/Flower";
 import Liver from "./pages/body/Liver";
+import Spleen from "./pages/body/Spleen";
 import Stomach from "./pages/body/Stomach";
+import Gallbladder from "./pages/body/Gallbladder";
 import Large from "./pages/body/Large";
 import Small from "./pages/body/Small";
+import Plants from "./pages/Plants";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -80,8 +84,16 @@ function App() {
 					element={<Liver />}
 				/>
 				<Route
+					path='/spleen'
+					element={<Spleen />}
+				/>
+				<Route
 					path='/stomach'
 					element={<Stomach />}
+				/>
+				<Route
+					path='/gall'
+					element={<Gallbladder />}
 				/>
 				<Route
 					path='/large'
@@ -90,6 +102,14 @@ function App() {
 				<Route
 					path='/small'
 					element={<Small />}
+				/>
+				<Route
+					path='/plants'
+					element={<Plants />}
+				/>
+				<Route
+					path='/flower'
+					element={<Flower />}
 				/>
 			</Routes>
 		</Router>
