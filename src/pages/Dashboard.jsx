@@ -53,17 +53,22 @@ const Dashboard = () => {
 								<div>
 									<button
 										onClick={() => setIsOpenBackpack(!isOpenBackpack)}
-										className='relative left-60 bottom-24 text-4xl opacity-0'>
+										className='relative left-[230px] bottom-16 text-4xl opacity-0'>
 										Backpack
 									</button>
 									<Link
+										to='/periodic'
+										className='relative text-2xl bottom-[160px] left-[300px] opacity-0'>
+										Waterbottle
+									</Link>
+									<Link
 										to='/apple'
-										className='relative bottom-44 text-5xl opacity-0'>
+										className='relative bottom-44 text-5xl right-[150px] opacity-0'>
 										Apple
 									</Link>
 									<Link
 										to='/body'
-										className='relative bottom-36 text-5xl left-[30px] opacity-0'>
+										className='relative bottom-36 text-5xl right-[130px] opacity-0'>
 										Body
 									</Link>
 								</div>

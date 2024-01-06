@@ -11,6 +11,11 @@ import Physics from "./pages/Physics";
 import Kinematics from "./pages/physics/Kinematics";
 import Newton from "./pages/physics/Newton";
 import Gravity from "./pages/physics/Gravity";
+import Body from "./pages/Body";
+import Liver from "./pages/body/Liver";
+import Stomach from "./pages/body/Stomach";
+import Large from "./pages/body/Large";
+import Small from "./pages/body/Small";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -65,6 +70,26 @@ function App() {
 				<Route
 					path='/gravity'
 					element={<Gravity />}
+				/>
+				<Route
+					path='/body'
+					element={<Body />}
+				/>
+				<Route
+					path='/liver'
+					element={<Liver />}
+				/>
+				<Route
+					path='/stomach'
+					element={<Stomach />}
+				/>
+				<Route
+					path='/large'
+					element={<Large />}
+				/>
+				<Route
+					path='/small'
+					element={<Small />}
 				/>
 			</Routes>
 		</Router>
