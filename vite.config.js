@@ -11,7 +11,7 @@ export default defineConfig({
 			devOptions: {
 				enabled: true,
 			},
-			manifiest: {
+			manifest: {
 				theme_color: "#bb2e2e",
 				background_color: "#Fff",
 				display: "standalone",
