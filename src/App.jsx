@@ -20,6 +20,16 @@ import Gallbladder from "./pages/body/Gallbladder";
 import Large from "./pages/body/Large";
 import Small from "./pages/body/Small";
 import Plants from "./pages/Plants";
+import Nobble from "./pages/elements/Nobble";
+import Halogen from "./pages/elements/Halogen";
+import Nonmetal from "./pages/elements/Nonmetal";
+import Metalloid from "./pages/elements/Metalloid";
+import Basic from "./pages/elements/Basic";
+import Transition from "./pages/elements/Transition";
+import Lanthanide from "./pages/elements/Lanthanide";
+import Actinide from "./pages/elements/Actinide";
+import Alkaline from "./pages/elements/Alkaline";
+import Alkali from "./pages/elements/Alkali";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -110,6 +120,47 @@ function App() {
 				<Route
 					path='/flower'
 					element={<Flower />}
+				/>
+				<Route
+					path='/nobble'
+					element={<Nobble />}
+				/>
+				<Route
+					path='/halogen'
+					element={<Halogen />}
+				/>
+				<Route
+					path='/nonmetal'
+					element={<Nonmetal />}
+				/>
+				<Route
+					path='/metalloid'
+					element={<Metalloid />}
+				/>
+				<Route
+					path='/basic'
+					element={<Basic />}
+				/>
+				<Route
+					path='/transition'
+					element={<Transition />}
+				/>
+
+				<Route
+					path='/lanthanide'
+					element={<Lanthanide />}
+				/>
+				<Route
+					path='/actinide'
+					element={<Actinide />}
+				/>
+				<Route
+					path='/alkaline'
+					element={<Alkaline />}
+				/>
+				<Route
+					path='/alkali'
+					element={<Alkali />}
 				/>
 			</Routes>
 		</Router>
