@@ -22,7 +22,48 @@ const Alkaline = () => {
 						<h1 className='text-primary text-xl font-bold'>Alkaline Earth</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Beryllium",
+							}}>
+							Beryllium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Strontium",
+							}}>
+							Strontium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Barium",
+							}}>
+							Barium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Calcium",
+							}}>
+							Calcium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Radium",
+							}}>
+							Radium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Magnesium",
+							}}>
+							Magnesium
+						</Link>
 					</div>
 				</div>
 			) : (

@@ -22,7 +22,48 @@ const Nonmetal = () => {
 						<h1 className='text-primary text-xl font-bold'>Nonmetals</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Nitrogen",
+							}}>
+							Nitrogen
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Oxygen",
+							}}>
+							Oxygen
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Carbon",
+							}}>
+							Carbon
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Phosphorus",
+							}}>
+							Phosphorus
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Sulfur",
+							}}>
+							Sulfur
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Helium",
+							}}>
+							Helium
+						</Link>
 					</div>
 				</div>
 			) : (

@@ -22,7 +22,43 @@ const Metalloid = () => {
 						<h1 className='text-primary text-xl font-bold'>Metalloid</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Boron",
+							}}>
+							Boron
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Germanium",
+							}}>
+							Germanium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Antimony",
+							}}>
+							Antimony
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Arsenic",
+							}}>
+							Arsenic
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Tellurium",
+							}}>
+							Tellurium
+						</Link>
+
+						<Link>Coming soon...</Link>
 					</div>
 				</div>
 			) : (

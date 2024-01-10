@@ -23,6 +23,42 @@ const Halogen = () => {
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
 						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Chlorine",
+							}}>
+							Chlorine
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Bromine",
+							}}>
+							Bromine
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Astatine",
+							}}>
+							Astatine
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Iodine",
+							}}>
+							Iodine
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Tennessine",
+							}}>
+							Tennessine
+						</Link>
+						<Link>Coming soon...</Link>
 					</div>
 				</div>
 			) : (

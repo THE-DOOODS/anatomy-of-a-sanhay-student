@@ -22,7 +22,48 @@ const Nobble = () => {
 						<h1 className='text-primary text-xl font-bold'>Nobble Gasses</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Helium",
+							}}>
+							Helium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Neon",
+							}}>
+							Neon
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Argon",
+							}}>
+							Argon
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Krypton",
+							}}>
+							Krypton
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Xenon",
+							}}>
+							Xenon
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Radon",
+							}}>
+							Radon
+						</Link>
 					</div>
 				</div>
 			) : (

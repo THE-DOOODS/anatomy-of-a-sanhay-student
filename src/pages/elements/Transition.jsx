@@ -22,7 +22,63 @@ const Transition = () => {
 						<h1 className='text-primary text-xl font-bold'>Transition Metals</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Vanadium",
+							}}>
+							Vanadium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Niobium",
+							}}>
+							Niobium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Molybdenum",
+							}}>
+							Molybdenum
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Technetium",
+							}}>
+							Technetium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Ruthenium",
+							}}>
+							Ruthenium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Palladium",
+							}}>
+							Palladium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Hafnium",
+							}}>
+							Hafnium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Tantalum",
+							}}>
+							Tantalum
+						</Link>
+						<Link>Coming soon...</Link>
 					</div>
 				</div>
 			) : (

@@ -30,6 +30,7 @@ import Lanthanide from "./pages/elements/Lanthanide";
 import Actinide from "./pages/elements/Actinide";
 import Alkaline from "./pages/elements/Alkaline";
 import Alkali from "./pages/elements/Alkali";
+import ViewElement from "./components/ViewElement";
 
 function App() {
 	const [loading, setLoading] = useState(true);
@@ -161,6 +162,10 @@ function App() {
 				<Route
 					path='/alkali'
 					element={<Alkali />}
+				/>
+				<Route
+					path='/element'
+					element={<ViewElement />}
 				/>
 			</Routes>
 		</Router>

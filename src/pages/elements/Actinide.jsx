@@ -22,7 +22,111 @@ const Actinide = () => {
 						<h1 className='text-primary text-xl font-bold'>Actinides</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Actinium",
+							}}>
+							Actinium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Thorium",
+							}}>
+							Thorium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Protactinium",
+							}}>
+							Protactinium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Uranium",
+							}}>
+							Uranium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Neptunium",
+							}}>
+							Neptunium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Plutonium",
+							}}>
+							Plutonium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Americium",
+							}}>
+							Americium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Curium",
+							}}>
+							Curium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Berkelium",
+							}}>
+							Berkelium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Californium",
+							}}>
+							Californium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Einsteinium",
+							}}>
+							Einsteinium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Fermium",
+							}}>
+							Fermium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Mendelevium",
+							}}>
+							Mendelevium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Nobelium",
+							}}>
+							Nobelium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Lawrencium",
+							}}>
+							Lawrencium
+						</Link>
 					</div>
 				</div>
 			) : (

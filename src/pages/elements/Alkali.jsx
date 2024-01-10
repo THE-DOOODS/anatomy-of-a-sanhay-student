@@ -22,7 +22,48 @@ const Alkali = () => {
 						<h1 className='text-primary text-xl font-bold'>Alkali Metals</h1>
 					</div>
 					<div className='flex flex-col gap-4 w-full font-bold text-2xl mt-24'>
-						{/* Links */}
+						<Link
+							to='/element'
+							state={{
+								name: "Sodium",
+							}}>
+							Sodium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Potassium",
+							}}>
+							Potassium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Francium",
+							}}>
+							Francium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Rubidium",
+							}}>
+							Rubidium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Cesium",
+							}}>
+							Cesium
+						</Link>
+						<Link
+							to='/element'
+							state={{
+								name: "Lithium",
+							}}>
+							Lithium
+						</Link>
 					</div>
 				</div>
 			) : (
